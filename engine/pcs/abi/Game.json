@@ -1,0 +1,287 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "gameVersion",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "gameVersion()": "eaac3757"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"gameVersion\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"sol/Game.sol\":\"Game\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":forge-std/=node_modules/forge-std/\"]},\"sources\":{\"sol/Game.sol\":{\"keccak256\":\"0xf025387644df8e19ba466cd4cf5aeb842372bded72e069e35e40c57a866c90eb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://627bd84a4a52530991df3e1b5da48c676135565b637144d703ceff4c3569d4eb\",\"dweb:/ipfs/QmXrHzLTatqtSyPMQSDR4TNNrC18m4nwhUdQe7zZTENTK3\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "gameVersion",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":forge-std/=node_modules/forge-std/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "sol/Game.sol": "Game"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "sol/Game.sol": {
+        "keccak256": "0xf025387644df8e19ba466cd4cf5aeb842372bded72e069e35e40c57a866c90eb",
+        "urls": [
+          "bzz-raw://627bd84a4a52530991df3e1b5da48c676135565b637144d703ceff4c3569d4eb",
+          "dweb:/ipfs/QmXrHzLTatqtSyPMQSDR4TNNrC18m4nwhUdQe7zZTENTK3"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "sol/Game.sol",
+    "id": 14,
+    "exportedSymbols": {
+      "GAME_ADDRESS": [
+        7
+      ],
+      "Game": [
+        13
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:709:0",
+    "nodes": [
+      {
+        "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:0",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 7,
+        "nodeType": "VariableDeclaration",
+        "src": "106:45:0",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "GAME_ADDRESS",
+        "nameLocation": "123:12:0",
+        "scope": 14,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_address",
+          "typeString": "address"
+        },
+        "typeName": {
+          "id": 2,
+          "name": "address",
+          "nodeType": "ElementaryTypeName",
+          "src": "106:7:0",
+          "stateMutability": "nonpayable",
+          "typeDescriptions": {
+            "typeIdentifier": "t_address",
+            "typeString": "address"
+          }
+        },
+        "value": {
+          "arguments": [
+            {
+              "hexValue": "30783830",
+              "id": 5,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "146:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_128_by_1",
+                "typeString": "int_const 128"
+              },
+              "value": "0x80"
+            }
+          ],
+          "expression": {
+            "argumentTypes": [
+              {
+                "typeIdentifier": "t_rational_128_by_1",
+                "typeString": "int_const 128"
+              }
+            ],
+            "id": 4,
+            "isConstant": false,
+            "isLValue": false,
+            "isPure": true,
+            "lValueRequested": false,
+            "nodeType": "ElementaryTypeNameExpression",
+            "src": "138:7:0",
+            "typeDescriptions": {
+              "typeIdentifier": "t_type$_t_address_$",
+              "typeString": "type(address)"
+            },
+            "typeName": {
+              "id": 3,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "138:7:0",
+              "typeDescriptions": {}
+            }
+          },
+          "id": 6,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "typeConversion",
+          "lValueRequested": false,
+          "nameLocations": [],
+          "names": [],
+          "nodeType": "FunctionCall",
+          "src": "138:13:0",
+          "tryCall": false,
+          "typeDescriptions": {
+            "typeIdentifier": "t_address",
+            "typeString": "address"
+          }
+        },
+        "visibility": "internal"
+      },
+      {
+        "id": 13,
+        "nodeType": "ContractDefinition",
+        "src": "154:586:0",
+        "nodes": [
+          {
+            "id": 12,
+            "nodeType": "FunctionDefinition",
+            "src": "208:61:0",
+            "nodes": [],
+            "functionSelector": "eaac3757",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "gameVersion",
+            "nameLocation": "217:11:0",
+            "parameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "228:2:0"
+            },
+            "returnParameters": {
+              "id": 11,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12,
+                  "src": "254:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 9,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "254:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "253:15:0"
+            },
+            "scope": 13,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Game",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          13
+        ],
+        "name": "Game",
+        "nameLocation": "164:4:0",
+        "scope": 14,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 0
+}
