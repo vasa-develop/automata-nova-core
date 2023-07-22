@@ -6,30 +6,31 @@ import (
 
 	// "math/big"
 
+	// "math/big"
+
 	"github.com/ethereum/go-ethereum/accounts/abi"
+	// "github.com/ethereum/go-ethereum/common"
 
 	// "github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/concrete/api"
 	"github.com/ethereum/go-ethereum/concrete/lib"
-	"github.com/ethereum/go-ethereum/crypto"
+	// "github.com/ethereum/go-ethereum/crypto"
 )
 
-//go:embed abi/Game.json
-var gameAbiJson []byte
+//go:embed abi/Automaton.json
+var automatonAbiJson []byte
 
 var (
-	GameABI        abi.ABI
-	GamePrecompile api.Precompile
+	AutomatonABI        abi.ABI
+	AutomatonPrecompile api.Precompile
 )
-
-var GAME_VERSION = "v0.0.0"
 
 var (
 	// This is the storage slot for the mapping players to their owned rooms
-	PlayerMapKey = crypto.Keccak256Hash([]byte("player.to.room.map"))
+	// PlayerMapKey = crypto.Keccak256Hash([]byte("player.to.room.map"))
 
 	// This is the storage slot for the tracking the game time
-	GameTimeReferenceKey = crypto.Keccak256Hash([]byte("game.time.reference"))
+	// GameTimeReferenceKey = crypto.Keccak256Hash([]byte("game.time.reference"))
 )
 
 func init() {
@@ -37,33 +38,28 @@ func init() {
 	var jsonAbi struct {
 		ABI abi.ABI `json:"abi"`
 	}
-	err := json.Unmarshal(gameAbiJson, &jsonAbi)
+	err := json.Unmarshal(automatonAbiJson, &jsonAbi)
 	if err != nil {
 		panic(err)
 	}
-	GameABI = jsonAbi.ABI
+	AutomatonABI = jsonAbi.ABI
 	// Create the precompile
-	GamePrecompile = lib.NewPrecompileWithABI(GameABI, map[string]lib.MethodPrecompile{
-		"gameVersion": &gameVersionMethod{},
-		// "joinGame": &joinGameMethod{},
-		// "getPlayerRooms": &getPlayerRoomsMethod{},
-		// "registerScript": &registerScriptMethod{},
-		// "getPlayerScript": &getPlayerScriptMethod{},
-		// "tick": &tickMethod{},
+	AutomatonPrecompile = lib.NewPrecompileWithABI(AutomatonABI, map[string]lib.MethodPrecompile{
+		"getMessage": &getMessageMethod{},
 	})
 }
 
-type gameVersionMethod struct {
+type getMessageMethod struct {
 	lib.BlankMethodPrecompile
 }
 
-func (p *gameVersionMethod) RequiredGas(input []byte) uint64 {
+func (p *getMessageMethod) RequiredGas(input []byte) uint64 {
 	// Simple fixed gas cost, note this is oversimplified and does not actually reflect
 	// the underlying resource usage of the operation.
 	return 100
 }
 
-func (p *gameVersionMethod) Run(concrete api.API, input []byte) ([]byte, error) {
+func (p *getMessageMethod) Run(concrete api.API, input []byte) ([]byte, error) {
 	return p.CallRunWithArgs(func(concrete api.API, args []interface{}) ([]interface{}, error) {
 		// idBN := args[0].(*big.Int)
 		// idHash := common.BigToHash(idBN)

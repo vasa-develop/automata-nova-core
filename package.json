@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "prepare": "yarn build:abi",
-    "build:abi": "forge build && cp out/Game.sol/Game.json engine/pcs/abi",
+    "build:abi": "forge build && cp out/Game.sol/Game.json engine/pcs/abi && cp out/Automaton.sol/Automaton.json engine/pcs/abi",
     "build:docker": "docker build -t ghcr.io/therealbytes/concrete-template-geth:v0.0.1 .",
     "test": "yarn test:go",
     "test:go": "go test -v ./... || true",

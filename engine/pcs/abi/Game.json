@@ -10,7 +10,7 @@
           "type": "string"
         }
       ],
-      "stateMutability": "pure",
+      "stateMutability": "view",
       "type": "function"
     }
   ],
@@ -27,7 +27,7 @@
   "methodIdentifiers": {
     "gameVersion()": "eaac3757"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"gameVersion\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"sol/Game.sol\":\"Game\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":forge-std/=node_modules/forge-std/\"]},\"sources\":{\"sol/Game.sol\":{\"keccak256\":\"0xf025387644df8e19ba466cd4cf5aeb842372bded72e069e35e40c57a866c90eb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://627bd84a4a52530991df3e1b5da48c676135565b637144d703ceff4c3569d4eb\",\"dweb:/ipfs/QmXrHzLTatqtSyPMQSDR4TNNrC18m4nwhUdQe7zZTENTK3\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"gameVersion\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"sol/Game.sol\":\"Game\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":forge-std/=node_modules/forge-std/\"]},\"sources\":{\"sol/Game.sol\":{\"keccak256\":\"0x1f7f1f9b91749074bfcaf8047a90c2fbfec04c3da3e271e8b94bbc4125b5447c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ce83204a7298510f33f69c05048421b393b1594216f37d909a93007772a899d0\",\"dweb:/ipfs/QmU9udve4KgQkXJt8MS8tbFTcjS5YMDTUsQw28B9AE8FQ8\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.17+commit.8df45f5f"
@@ -37,7 +37,7 @@
       "abi": [
         {
           "inputs": [],
-          "stateMutability": "pure",
+          "stateMutability": "view",
           "type": "function",
           "name": "gameVersion",
           "outputs": [
@@ -78,10 +78,10 @@
     },
     "sources": {
       "sol/Game.sol": {
-        "keccak256": "0xf025387644df8e19ba466cd4cf5aeb842372bded72e069e35e40c57a866c90eb",
+        "keccak256": "0x1f7f1f9b91749074bfcaf8047a90c2fbfec04c3da3e271e8b94bbc4125b5447c",
         "urls": [
-          "bzz-raw://627bd84a4a52530991df3e1b5da48c676135565b637144d703ceff4c3569d4eb",
-          "dweb:/ipfs/QmXrHzLTatqtSyPMQSDR4TNNrC18m4nwhUdQe7zZTENTK3"
+          "bzz-raw://ce83204a7298510f33f69c05048421b393b1594216f37d909a93007772a899d0",
+          "dweb:/ipfs/QmU9udve4KgQkXJt8MS8tbFTcjS5YMDTUsQw28B9AE8FQ8"
         ],
         "license": "MIT"
       }
@@ -100,7 +100,7 @@
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:709:0",
+    "src": "32:1359:0",
     "nodes": [
       {
         "id": 1,
@@ -207,24 +207,24 @@
       {
         "id": 13,
         "nodeType": "ContractDefinition",
-        "src": "154:586:0",
+        "src": "154:1236:0",
         "nodes": [
           {
             "id": 12,
             "nodeType": "FunctionDefinition",
-            "src": "208:61:0",
+            "src": "246:61:0",
             "nodes": [],
             "functionSelector": "eaac3757",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "gameVersion",
-            "nameLocation": "217:11:0",
+            "nameLocation": "255:11:0",
             "parameters": {
               "id": 8,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "228:2:0"
+              "src": "266:2:0"
             },
             "returnParameters": {
               "id": 11,
@@ -238,7 +238,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 12,
-                  "src": "254:13:0",
+                  "src": "292:13:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -249,7 +249,7 @@
                     "id": 9,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "254:6:0",
+                    "src": "292:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -258,10 +258,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "253:15:0"
+              "src": "291:15:0"
             },
             "scope": 13,
-            "stateMutability": "pure",
+            "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }

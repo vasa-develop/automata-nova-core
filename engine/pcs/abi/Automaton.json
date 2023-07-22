@@ -1,0 +1,338 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "automatonId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getMessage",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getMessage(bytes32)": "0139a221"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"automatonId\",\"type\":\"bytes32\"}],\"name\":\"getMessage\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"sol/Automaton.sol\":\"Automaton\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":forge-std/=node_modules/forge-std/\"]},\"sources\":{\"sol/Automaton.sol\":{\"keccak256\":\"0x8542b1d859e7edb079cd3f86a0bf6b6177d9d76cef525a06b83751e18f432794\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d85413affe8a906ab52ae9699fedd63be98b5b327cfa09a1098d5f90a4f02eff\",\"dweb:/ipfs/QmYsRsarRpyxRnMceTwo7yysN1Ec3NsnBdEykE9QEobmRA\"]},\"sol/Enums.sol\":{\"keccak256\":\"0x1a649fb1240f65dfee67af470038c75ecdc23cf6a467a6ac9611259e9236c6b0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7a11d1e4e55a91c7bb2cdbaa7d88f401572423d64be00b1fa79879425bf21046\",\"dweb:/ipfs/QmdhDQYUCPUyhPK9e7Xz4XMVvgmXBkg9GpMeKrih4UFj1y\"]},\"sol/Structs.sol\":{\"keccak256\":\"0xb0e938b6b6e6df844446c4161e54874985f6755b2996ca94634062a686f8d447\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8e597664610b2044cb2fe9007b7e7b44553bb8c75b5855872ed8191df2f537e4\",\"dweb:/ipfs/QmWqSd4EEXXaafoWqzyofaCLko7HBTEcR5acYgwns4VjCo\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "automatonId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getMessage",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":forge-std/=node_modules/forge-std/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "sol/Automaton.sol": "Automaton"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "sol/Automaton.sol": {
+        "keccak256": "0x8542b1d859e7edb079cd3f86a0bf6b6177d9d76cef525a06b83751e18f432794",
+        "urls": [
+          "bzz-raw://d85413affe8a906ab52ae9699fedd63be98b5b327cfa09a1098d5f90a4f02eff",
+          "dweb:/ipfs/QmYsRsarRpyxRnMceTwo7yysN1Ec3NsnBdEykE9QEobmRA"
+        ],
+        "license": "MIT"
+      },
+      "sol/Enums.sol": {
+        "keccak256": "0x1a649fb1240f65dfee67af470038c75ecdc23cf6a467a6ac9611259e9236c6b0",
+        "urls": [
+          "bzz-raw://7a11d1e4e55a91c7bb2cdbaa7d88f401572423d64be00b1fa79879425bf21046",
+          "dweb:/ipfs/QmdhDQYUCPUyhPK9e7Xz4XMVvgmXBkg9GpMeKrih4UFj1y"
+        ],
+        "license": "MIT"
+      },
+      "sol/Structs.sol": {
+        "keccak256": "0xb0e938b6b6e6df844446c4161e54874985f6755b2996ca94634062a686f8d447",
+        "urls": [
+          "bzz-raw://8e597664610b2044cb2fe9007b7e7b44553bb8c75b5855872ed8191df2f537e4",
+          "dweb:/ipfs/QmWqSd4EEXXaafoWqzyofaCLko7HBTEcR5acYgwns4VjCo"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "sol/Automaton.sol",
+    "id": 16,
+    "exportedSymbols": {
+      "Automaton": [
+        15
+      ],
+      "BodyParts": [
+        66
+      ],
+      "Errors": [
+        35
+      ],
+      "RoomPosition": [
+        75
+      ],
+      "StructureTypes": [
+        57
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:3525:0",
+    "nodes": [
+      {
+        "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:0",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 3,
+        "nodeType": "ImportDirective",
+        "src": "57:45:0",
+        "nodes": [],
+        "absolutePath": "sol/Structs.sol",
+        "file": "./Structs.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 16,
+        "sourceUnit": 76,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 2,
+              "name": "RoomPosition",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 75,
+              "src": "66:12:0",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 7,
+        "nodeType": "ImportDirective",
+        "src": "103:64:0",
+        "nodes": [],
+        "absolutePath": "sol/Enums.sol",
+        "file": "./Enums.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 16,
+        "sourceUnit": 67,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 4,
+              "name": "Errors",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 35,
+              "src": "112:6:0",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 5,
+              "name": "StructureTypes",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 57,
+              "src": "120:14:0",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 6,
+              "name": "BodyParts",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 66,
+              "src": "136:9:0",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 15,
+        "nodeType": "ContractDefinition",
+        "src": "370:3187:0",
+        "nodes": [
+          {
+            "id": 14,
+            "nodeType": "FunctionDefinition",
+            "src": "2727:79:0",
+            "nodes": [],
+            "functionSelector": "0139a221",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getMessage",
+            "nameLocation": "2736:10:0",
+            "parameters": {
+              "id": 10,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9,
+                  "mutability": "mutable",
+                  "name": "automatonId",
+                  "nameLocation": "2755:11:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14,
+                  "src": "2747:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 8,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2747:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2746:21:0"
+            },
+            "returnParameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14,
+                  "src": "2791:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 11,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2791:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2790:15:0"
+            },
+            "scope": 15,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Automaton",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          15
+        ],
+        "name": "Automaton",
+        "nameLocation": "380:9:0",
+        "scope": 16,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 0
+}

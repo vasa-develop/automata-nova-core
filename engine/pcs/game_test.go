@@ -1,5 +1,51 @@
 package pcs
 
+import (
+
+	// "math/big"
+	// "fmt"
+	"testing"
+
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/concrete/api"
+	"github.com/ethereum/go-ethereum/core/rawdb"
+	"github.com/ethereum/go-ethereum/core/state"
+	"github.com/ethereum/go-ethereum/core/vm"
+	"github.com/ethereum/go-ethereum/params"
+)
+
+func TestGame(t *testing.T) {
+
+	var (
+		addr       = common.HexToAddress("0x1234")
+		// roomId	   = uint8(1)
+		db         = state.NewDatabase(rawdb.NewMemoryDatabase())
+		statedb, _ = state.New(common.Hash{}, db, nil)
+		evm        = vm.NewEVM(vm.BlockContext{}, vm.TxContext{}, statedb, params.TestChainConfig, vm.Config{})
+		concrete   = api.New(evm.NewConcreteEVM(), addr)
+	)
+	
+	gameVersion := func() string {
+		input, err := GameABI.Pack("gameVersion")
+		if err != nil {
+			t.Fatal(err)
+		}
+		output, err := GamePrecompile.Run(concrete, input)
+		if err != nil {
+			t.Fatal(err)
+		}
+		returns, err := GameABI.Unpack("gameVersion", output)
+		if err != nil {
+			t.Fatal(err)
+		}
+		return returns[0].(string)
+	}
+
+	if (gameVersion() != GAME_VERSION) {
+		t.Fatal("expected gameVersion to return", GAME_VERSION)
+	}
+}
+
 /*
 import (
 	_ "embed"
